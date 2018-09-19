@@ -6,6 +6,11 @@ body {
   background: url("../images/concrete_seamless.png");
 }
 
+#mydiv {
+  width: 768px;
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -215,3 +220,35 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+@media screen and (max-width: 768px) {
+  #main-container {
+    padding-top: 150px;
+  }
+  
+  .container {
+    max-width: 768px;
+    min-width: 0px;
+    padding: 0;
+  }
+
+  #header {
+    position: static;
+    margin-bottom: 50px;
+  }
+
+  nav {
+    text-align: center;
+    margin: 15px;
+    
+  }
+
+  .auth-image {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+}
+  
+
